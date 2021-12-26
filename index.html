@@ -43,17 +43,24 @@
   <body>
     <header class="header">
       <nav class="nav-header container">
-        <img class="nav-logo" src="img/Vector.svg" alt="logo" />
-
-        <div class="links-nav">
-          <a href="#">Comunidade Ballerini</a>
-          <a href="#">Tutorial</a>
-          <a href="#">Open Source</a>
-          <a href="#">Comandos</a>
+        <div class="nav-logo">
+          <img class="nav-logo-img" src="img/Vector.svg" alt="logo" />
         </div>
 
-        <div class="menu-mobile">
-          <i><i class="fas fa-bars"></i></i>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">Open Source</a></li>
+          <li><a href="#">Comunidade Ballerini</a></li>
+          <!-- <li><a href="#"><i class="fas fa-bars"></i></a></li> -->
+        </ul>
+
+        <!-- menu-burger -->
+
+        <div class="menu-burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
       </nav>
     </header>
@@ -67,7 +74,7 @@
             <button class="btn-ballebot" href="#">Me adicione!</button>
           </div>
           <div class="item-2">
-            <img src="img/balle-bot.svg" alt="" />
+            <img class="img-item-2" src="img/balle-bot.svg" alt="" />
           </div>
         </div>
       </section>
@@ -91,8 +98,12 @@
       </section>
     </main>
 
-    <footer class="container footer">
-      <img src="img/BALLERINI.svg" alt="" />
+    <footer class="footer">
+      <div class="container footer-conteudo">
+        <img class="footer-img" src="img/BALLERINI.svg" alt="" />
+      </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
