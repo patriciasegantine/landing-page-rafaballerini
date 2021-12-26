@@ -1,0 +1,107 @@
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+/* header */
+
+.header {
+  border-bottom: 0.4px solid #fff2e7;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  font-family: Sarala, sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff2e7;
+  padding: 10px 20px;
+}
+
+/* Section one */
+
+.section-one {
+  display: flex;
+  margin: 40px 0;
+}
+
+.section-one-item-1 {
+  flex: 2;
+}
+
+.section-one-item-1 h1 {
+  font-family: Righteous;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 79px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff2e7;
+}
+
+.section-one-item-1 p {
+  font-family: Sarala;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ecd6c4;
+  margin: 20px 0;
+}
+
+.btn-ballebot {
+  width: 185px;
+  height: 67px;
+  background: #ecd6c4;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: Sarala;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 39px;
+  text-align: center;
+  padding: 5px 15px;
+  margin-top: 20px;
+  color: #2f2325;
+}
+
+.section-one-item-2 {
+  flex: 1;
+}
