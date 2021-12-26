@@ -1,107 +1,204 @@
-body,
-h1,
-h2,
-h3,
-ul,
-li,
-p {
+* {
   margin: 0;
   padding: 0;
-}
-
-a {
+  box-sizing: border-box;
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+img {
+  max-width: 100%;
 }
 
 body {
-  background: linear-gradient(68.15deg, #2F2325 16.62%, #8E5D52 85.61%);
-
+  background: linear-gradient(68.15deg, #2f2325 16.62%, #55403b 85.61%);
+  font-size: 100%;
 }
 
 .container {
   max-width: 1200px;
-  margin: 10px auto;
+  margin: auto;
+  padding: 0 30px;
 }
 
 /* header */
 
 .header {
-  border-bottom: 0.4px solid #fff2e7;
+  padding: 20px 0;
 }
 
 .nav-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
-.links a {
+.nav-logo {
+  filter: drop-shadow(0 0 2rem #ecd6c48c);
+  height: 75px;
+}
+
+.links-nav a {
   font-family: Sarala, sans-serif;
   font-size: 1.125rem;
-  font-style: normal;
   font-weight: 400;
-  line-height: 2rem;
-  letter-spacing: 0em;
-  text-align: left;
   color: #fff2e7;
   padding: 10px 20px;
 }
 
-/* Section one */
-
-.section-one {
-  display: flex;
-  margin: 40px 0;
+.links-nav a:hover {
+  opacity: 0.7;
 }
 
-.section-one-item-1 {
-  flex: 2;
-}
+/* menu-mobile */
 
-.section-one-item-1 h1 {
-  font-family: Righteous;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 79px;
-  letter-spacing: 0em;
-  text-align: left;
+.menu-mobile {
+  display: none;
+  font-size: 2rem;
   color: #fff2e7;
 }
 
-.section-one-item-1 p {
-  font-family: Sarala;
+.menu-mobile:hover {
+  opacity: 0.7;
+}
+
+/* main */
+
+.main {
+  border-top: 0.4px solid #ecd6c4;
+  border-bottom: 0.4px solid #ecd6c4;
+}
+
+/* Section one */
+
+.section-one::after {
+  content: '';
+  display: block;
+  margin: 50px;
+  width: 300px;
+  margin: 20px auto;
+  border-bottom: 0.4px solid #fff2e7;
+}
+
+.section-one-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.section-one .item-1 {
+  flex: 2;
+  margin: auto;
+}
+
+.section-one .item-2 {
+  flex: 1;
+}
+
+.section-one h1 {
+  font-family: Righteous;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 79px;
+  color: #fff2e7;
+}
+
+.section-one p {
+  font-family: Sarala, serif;
   font-size: 1.5rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 39px;
-  letter-spacing: 0em;
-  text-align: left;
   color: #ecd6c4;
   margin: 20px 0;
 }
 
 .btn-ballebot {
-  width: 185px;
-  height: 67px;
-  background: #ecd6c4;
-  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  font-family: Sarala;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.5rem;
+  width: 160px;
+  height: 50px;
+  font-family: Sarala, serif;
+  font-size: 1.2rem;
   line-height: 39px;
   text-align: center;
-  padding: 5px 15px;
+  background: #ecd6c4;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  border: none;
   margin-top: 20px;
+  cursor: pointer;
   color: #2f2325;
 }
 
-.section-one-item-2 {
-  flex: 1;
+.btn-ballebot:hover {
+  opacity: 0.8;
+}
+
+/* section two */
+
+.section-two {
+  text-align: center;
+  color: #ecd6c4;
+  margin-top: 80px;
+}
+
+.section-two h2 {
+  font-family: Righteous;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 40px auto 60px auto;
+}
+
+.section-two-item {
+  margin-bottom: 80px;
+}
+
+.section-two-item p {
+  font-family: Sarala;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 29px;
+  text-align: center;
+  margin: 25px auto;
+}
+
+/* footer */
+
+.footer {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Responsividade */
+
+@media (max-width: 500px) {
+  body {
+    font-size: 60%;
+  }
+
+  .links-nav {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .section-one-item {
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: 15px;
+  }
+
+  .section-one-item .item-1 {
+    text-align: center;
+  }
 }
